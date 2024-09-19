@@ -1,0 +1,74 @@
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ripple {
+  position: absolute;
+  background-color: rgba(83, 83, 83, 0.5);
+  transform: translate(-50%, -50%);
+  animation: rippleEffect 0.5s ease-out;
+  border-radius: 50%;
+}
+
+@keyframes rippleEffect {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.tab-container {
+  width: 100%;
+}
+.tab-container ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.form-container input::placeholder {
+  color: #5f6170;
+  font-weight: 500;
+}
+
+.tab-container ul li {
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-container ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #797fff;
+  transition: none;
+}
+
+.tab-container ul li.active-tab::after {
+  width: 100%;
+  display: block;
+  transition: width 0.3s ease-in;
+}
+.active-tab {
+  color: #fff !important;
+  border-bottom: 2px solid #fff;
+}

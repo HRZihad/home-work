@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="show-rangebar"></div>
+    <!----------------------------------------------- form content -------------------------------------------->
+    <div class="form-container">
+      <form action="">
+        <div class="">
+          <label for="" class="text-color2 fs-6 mb-2">Method</label>
+          <div class="position-relative">
+            <input
+              type="text"
+              id="method-field"
+              class="input-field px-3 text-color"
+              placeholder="Select Method"
+            />
+            <span class="input-icon" id="method-field-icon"
+              ><i class="fa-solid fa-caret-down" style="color: #666d8d"></i
+            ></span>
+            <div class="option-group" style="display: none">
+              <p>Select Method</p>
+              <p id="bank">Bank</p>
+              <p id="crypto">Crypto</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-2">
+          <label for="" class="text-color2 fs-6 mb-2">Amount</label>
+          <div class="position-relative">
+            <input
+              type="text"
+              id="amount-field"
+              class="input-field px-5 text-color"
+              placeholder="0.00"
+            />
+            <span class="input-icon" id="amount-value"
+              ><i class="fa-solid fa-xmark fa-lg" style="color: #666d8d"></i
+            ></span>
+            <div class="eth-icon rounded-circle">
+              <img src="../assets/images/icon/ETH.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="my-2">
+          <label for="" class="text-color2 fs-6 mb-2">Document</label>
+          <div class="upload-container">
+            <label for="file-upload" class="custom-file-upload">
+              <img src="../assets/images/icon/folder.png" alt="Upload Icon" />
+              <span class="upload-text">UPLOAD IMAGE</span>
+            </label>
+            <div
+              id="image-preview"
+              class="upload-container"
+              style="display: none"
+            >
+              <img id="preview-img" src="" alt="Image Preview" />
+            </div>
+            <input id="file-upload" type="file" />
+            <div class="delete-icon" style="display: none">
+              <span><i class="fa-solid fa-trash"></i></span>
+            </div>
+          </div>
+        </div>
+        <span id="show-filename"></span>
+
+        <div class="my-3">
+          <button class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- -------------------------------------------- Latest Transection Start here ----------------------------------------- -->
+    <div class="text-color2">
+      <h1 class="fs-5 my-4">Latest Transection</h1>
+      <div class="d-flex flex-column gap-4">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex gap-4 align-items-center">
+            <div class="icon_container">
+              <img src="../assets/images/icon/img-1.png" alt="" />
+            </div>
+
+            <div class="">
+              <p class="text-color2 fs-6 mb-0">Deposit</p>
+              <p class="text-color mb-0" style="font-size: 12px">
+                06 july 2024, 1:53PM
+              </p>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-between text-end">
+            <p class="mb-0 text-color2 fs-6">$100</p>
+            <p class="mb-0" style="font-size: 12px; color: #facc26">Pending</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex gap-4 align-items-center">
+            <div class="icon_container">
+              <img src="../assets/images/icon/img-2.png" alt="" />
+            </div>
+
+            <div class="">
+              <p class="text-color2 fs-6 mb-0">Balance Send</p>
+              <p class="text-color mb-0" style="font-size: 12px">
+                06 july 2024, 1:53PM
+              </p>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-between text-end">
+            <p class="mb-0 text-color2 fs-6">$10</p>
+            <p class="mb-0" style="font-size: 12px; color: #31cf80">Approved</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex gap-4 align-items-center">
+            <div class="icon_container">
+              <img src="../assets/images/icon/img-3.png" alt="" />
+            </div>
+
+            <div class="">
+              <p class="text-color2 fs-6 mb-0">Withdraw</p>
+              <p class="text-color mb-0" style="font-size: 12px">
+                06 july 2024, 1:53PM
+              </p>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-between text-end">
+            <p class="mb-0 text-color2 fs-6">$100</p>
+            <p class="mb-0" style="font-size: 12px; color: #f86552">Rejected</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------- script ----------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./assets/all_js/apaxchart.js"></script>
+  </body>
+</html>
